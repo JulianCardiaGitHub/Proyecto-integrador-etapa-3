@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --color-primario-oscuro:#051367;
+    --color-primario-claro:#DFF6FF;
+    --color-secundario-azul-claro:#2D31FA;
+    --color-terciario-celestito:#5D8BF4;
+    --color-whatsapp:#25d366;
+    --color-bordes-iconos-plas:#ffa500;
+    
+    }
+    /* --color-primario-oscuro:#051367;
+    --color-primario-claro:#DFF6FF;
+    --color-secundario-azul-claro:#2D31FA;
+    --color-terciario-celestito:#5D8BF4;
+    --color-whatsapp:#25d366;
+    --color-bordes-iconos-plas:#ffa500; */
+
+    
+
+
+body {
+    font-family:roboto;
+    font-size: 100%; // default navegadores 16px
+}
+
+.nav-bar__nav-link{
+    color:#5D8BF4 ;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.search-bar__form-label{
+    color:#5D8BF4 ; 
+    font-weight: 500;
+    display: flex;
+    align-self: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  border: 0.5px solid red; */
+}

@@ -1,4 +1,4 @@
-
+import './Inicio.scss'
 
 const inicio = () => {
   return (

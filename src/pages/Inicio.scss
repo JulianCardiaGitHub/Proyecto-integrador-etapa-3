@@ -1,0 +1,58 @@
+.section-cards {
+    background-color:var(--color-primario-claro);
+    padding: 1rem;
+  }
+  
+  .cards-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    
+  
+  }
+  h1 {
+    color:var(--color-primario-oscuro);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  .products {
+    color: var(--color-primario-oscuro);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  .whatsapp {
+      background-color:var(--color-whatsapp);
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      width: 55px;
+      height: 55px;
+      color: white;
+      line-height: 55px;
+      text-align: center;
+      border-radius: 50%;
+  
+      @media (max-width: 576px){
+        background-color:var(--color-whatsapp);
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        width: 55px;
+        height: 55px;
+        color: white;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 50%;
+    
+  
+      }
+    }
+    .card__heading{
+      font-size: 1.5em;
+    }
+  
