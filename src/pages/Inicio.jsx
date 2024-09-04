@@ -1,7 +1,11 @@
 import Card from '../components/Card'
+import useTitulo from '../hooks/useTitulo'
 import './Inicio.scss'
 
 const inicio = () => {
+
+  useTitulo('Inicio')
+
   return (
     <main>
       <section className="section-cards">
