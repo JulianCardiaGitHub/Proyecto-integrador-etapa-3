@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const NavItem = ({item}) => {
   return (
     <li className="nav-bar__nav-item">
-            <a href={item.ruta} className="nav-bar__nav-link">
+            <NavLink to={item.ruta} className="nav-bar__nav-link">
               {item.nombre}
-            </a>
+            </NavLink>
           </li>
   )
 }
