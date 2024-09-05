@@ -25,8 +25,8 @@ const TablaFila = ( { producto }) => {
       </td>
       <td>{producto.envio ? 'SI' : 'NO'}</td>
       <td>
-        <button onClick={() => handleEditar(producto)}>Editar</button>
-        <button>Borrar</button>
+        <div className="editar"><i className="fa-solid fa-pen-to-square" onClick={() => handleEditar(producto)}></i></div>
+        <div className="eliminar"><i className="fa-solid fa-trash-can"></i></div>
       </td>
     </tr>
   )
