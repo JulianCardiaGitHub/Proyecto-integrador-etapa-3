@@ -13,10 +13,12 @@ const Card = ( { producto }) => {
       </div>
       <div className="card__content">
         <h2 className="card__heading">{producto.nombre}</h2>
+        <h3>${producto.precio}</h3>
         <div className="card__description">
           <p className="p-products">
           {producto.descripcion}
           </p>
+         
           <div className="add-carrito">
             <i className="fa-solid fa-circle-plus" onClick={() => handleAgregar(producto)}></i>
           </div>
