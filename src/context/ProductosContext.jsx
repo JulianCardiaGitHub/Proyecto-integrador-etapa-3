@@ -13,15 +13,22 @@ const ProductosProvider = ({ children }) => {
 
   const getAllProductos = async () => {
     try {
-      const prods = await helperPeticionesHttp(url, null);
+      const prods = await helperPeticionesHttp(url, {});
 
-      console.log(prods);
+      //console.log(prods)
+
+      setProductos(prods)
+
+
+
     } catch (error) {
       console.error("[getAllProductos]", error);
     }
   };
 
-  const data = {};
+  const data = {
+    productos
+  }
 
   return (
     <ProductosContext.Provider value={data}>

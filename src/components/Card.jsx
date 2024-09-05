@@ -1,26 +1,24 @@
 import './Card.scss'
 
-const Card = () => {
+const Card = ( { producto }) => {
   return (
     <div className="card">
     <article className="card__article">
       <div className="card__image-container">
         <img
-          src="img/pop-keys.webp"
-          alt="pop-keys"
+          src={producto.foto}
+          alt={producto.nombre}
           className="card__image"
         />
       </div>
       <div className="card__content">
-        <h2 className="card__heading">POP KEYS</h2>
+        <h2 className="card__heading">{producto.nombre}</h2>
         <div className="card__description">
           <p className="p-products">
-            Da rienda suelta a tu personalidad en tu escritorio y más
-            allá con POP Keys, con una estética de escritorio llamativa
-            y divertidas teclas de emojis personalizables.
+          {producto.descripcion}
           </p>
           <div className="add-carrito">
-            <i className="fa-solid fa-circle-plus"></i>
+            <i className="fa-solid fa-circle-plus" onClick={() => handleAgregar(producto)}></i>
           </div>
         </div>
       </div>
