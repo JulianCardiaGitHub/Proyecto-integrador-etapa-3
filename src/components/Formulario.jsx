@@ -1,5 +1,10 @@
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../context/ProductosContext"
+import './Formulario.scss'
+
+
+
+
 const Formulario = () => {
 
   const formInit = {
@@ -66,7 +71,7 @@ const Formulario = () => {
 
   return (
     <>
-      <h3>Agregar : Editar</h3>
+      <h3 className="agre-productos">Agregar : Editar</h3>
 
       <form onSubmit={handleSubmit}>
 

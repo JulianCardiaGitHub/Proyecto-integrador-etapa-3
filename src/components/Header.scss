@@ -86,6 +86,7 @@
     background-color: var(--color-primario-oscuro);
     display: flex;
     justify-content: space-around;
+    
   
     &__logo-container {
       /* .search-bar__logo-container */
@@ -97,7 +98,7 @@
   
     &__form-container {
       padding: 1rem;
-  
+    
       background-color: var(--color-primario-oscuro);
       display: flex;
       flex-basis: 100%;
@@ -111,7 +112,7 @@
   
     &__form-search {
       background-color: var(--color-primario-claro);
-      width: 70%;
+      width: 100%;
       margin: 4px;
       border-radius: 1em;
     }
@@ -128,6 +129,7 @@
       flex: 0 0 3rem; /* shorthand (grow shrink basis */
       background-color: var(--color-primario-oscuro);
       height: 50%;
+      padding: 3em;
     }
     .carrito {
       padding-top: 1em;
