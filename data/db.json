@@ -3,113 +3,120 @@
     {
       "id": 1,
       "nombre": "MX KEYS S",
+      "precio": 185750,
+      "stock": "5",
+      "detalles": "Experimente un nuevo nivel de estado de flujo con MX Keys S: un teclado de alto rendimiento, diseñado para una escritura cómoda, rápida y fluida, con iluminación inteligente y teclas programables.",
       "foto": "img/mx-keys-s.webp",
-      "descripcion": "Experimente un nuevo nivel de estado de flujo con MX Keys S: un teclado de alto rendimiento, diseñado para una escritura cómoda, rápida y fluida, con iluminación inteligente y teclas programables.",
-      "precio": 185750
+      "envio": true
     },
     {
       "id": 2,
       "nombre": "POP KEYS",
+      "precio": 155000,
+      "stock": "4",
+      "detalles": "Da rienda suelta a tu personalidad en tu escritorio y más allá con POP Keys, con una estética de escritorio llamativa y divertidas teclas de emojis personalizables.",
       "foto": "img/pop-keys.webp",
-      "descripcion": "Da rienda suelta a tu personalidad en tu escritorio y más allá con POP Keys, con una estética de escritorio llamativa y divertidas teclas de emojis personalizables.",
-      "precio": 155000
+      "envio": true
     },
     {
       "id": 3,
       "nombre": "LOGI K480",
+      "precio": 98000,
+      "stock": "8",
+      "detalles": "El K480 es un confortable teclado multidispositivo que ahorra espacio y facilita la escritura en la laptop, la tablet o el celular. Duración de baterías prolongada, es lo que necesitas para una mayor productividad.",
       "foto": "img/multidispositivo-k480.webp",
-      "descripcion": "El K480 es un confortable teclado multidispositivo que ahorra espacio y facilita la escritura en la laptop, la tablet o el celular. Duración de baterías prolongada, es lo que necesitas para una mayor productividad.",
-      "precio": 98000
+      "envio": true
     },
     {
       "id": 4,
       "nombre": "G502 HERO",
+      "precio": 86000,
+      "stock": "16",
+      "detalles": "Diseñado para un desempeño avanzado en los juegos. G502 HERO cuenta con un sensor de juegos HERO 25K con seguimiento de precisión submicrométrica, LIGHTSYNC RGB personalizable, y mucho más.",
       "foto": "img/g502-hero.webp",
-      "descripcion": "Diseñado para un desempeño avanzado en los juegos. G502 HERO cuenta con un sensor de juegos HERO 25K con seguimiento de precisión submicrométrica, LIGHTSYNC RGB personalizable, y mucho más.",
-      "precio": 86000
+      "envio": false
     },
     {
       "id": 5,
       "nombre": "ERGO M575",
+      "precio": 120000,
+      "stock": "11",
+      "detalles": "Minimiza el movimiento y maximiza el confort con ERGO M575, un trackball inalámbrico. Sin necesidad de mover el brazo para mover el cursor, tu mano y tu brazo permanecen relajados.",
       "foto": "img/ergo-m575.webp",
-      "descripcion": "Minimiza el movimiento y maximiza el confort con ERGO M575, un trackball inalámbrico. Sin necesidad de mover el brazo para mover el cursor, tu mano y tu brazo permanecen relajados.",
-      "precio": 120000
+      "envio": true
     },
     {
       "id": 6,
       "nombre": "MX MASTER 3S",
+      "precio": 95500,
+      "stock": "2",
+      "detalles": "Éste es MX Master 3S. Siente cada momento de tu flujo de trabajo con más precisión, sensación táctil y desempeño, gracias a los clicks discretos y un sensor de seguimiento sobre cristal13Grosor.",
       "foto": "img/mx-master-3s.webp",
-      "descripcion": "Éste es MX Master 3S. Siente cada momento de tu flujo de trabajo con más precisión, sensación táctil y desempeño, gracias a los clicks discretos y un sensor de seguimiento sobre cristal13Grosor.",
-      "precio": 95500
+      "envio": true
     },
     {
       "id": 7,
       "nombre": "G FITS",
+      "precio": 75000,
+      "stock": "3",
+      "detalles": "Los audífonos auténticamente inalámbricos FITS para juegos se ajustan perfectamente a tu diversión. La tecnología de moldeado LIGHTFORM proporciona un ajuste personalizado.",
       "foto": "img/g-fits.webp",
-      "descripcion": "Los audífonos auténticamente inalámbricos FITS para juegos se ajustan perfectamente a tu diversión. La tecnología de moldeado LIGHTFORM proporciona un ajuste personalizado.",
-      "precio": 75000
+      "envio": true
     },
     {
       "id": 8,
       "nombre": "ZONE VIBE 125",
+      "precio": 162200,
+      "stock": "4",
+      "detalles": "Auriculares inalámbricos ligeros con receptor USB: lo suficientemente profesionales para la oficina, perfectos para trabajar desde casa.",
       "foto": "img/zone-vibe-125.webp",
-      "descripcion": "Auriculares inalámbricos ligeros con receptor USB: lo suficientemente profesionales para la oficina, perfectos para trabajar desde casa.",
-      "precio": 162200
+      "envio": true
     },
     {
       "id": 9,
       "nombre": "ASTRO A50+BASE",
+      "precio": 220000,
+      "stock": "5",
+      "detalles": "Auriculares inalámbricos para gaming para Xbox, PlayStation y PC / MAC *. Con un diseño revolucionario, acústica avanzada y comodidad ergonómica.",
       "foto": "img/astro+base-a50.webp",
-      "descripcion": "Auriculares inalámbricos para gaming para Xbox, PlayStation y PC / MAC *. Con un diseño revolucionario, acústica avanzada y comodidad ergonómica.",
-      "precio": 220000
+      "envio": false
     },
     {
       "id": 10,
       "nombre": "LITRA LX RGB",
+      "precio": 145100,
+      "stock": "6",
+      "detalles": "Logitech Litra Beam LX es una luz de streaming de doble cara equipada con una luz de tecla en un lado que ofrece tonos de piel naturales, mientras que el otro lado ilumina tu espacio con LIGHTSYNC",
       "foto": "img/litra-beam-LX-RGB.webp",
-      "descripcion": "Logitech Litra Beam LX es una luz de streaming de doble cara equipada con una luz de tecla en un lado que ofrece tonos de piel naturales, mientras que el otro lado ilumina tu espacio con LIGHTSYNC",
-      "precio": 145100
+      "envio": false
     },
     {
       "id": 11,
       "nombre": "YETI GX",
+      "precio": 130000,
+      "stock": "7",
+      "detalles": "Es un micrófono RGB premium para juegos con LIGHTSYNC. Este micrófono USB rechaza el ruido y los clics de las teclas, mejora el sonido y garantiza un audio de alta calidad constante mientras transmite.",
       "foto": "public/img/yeti-gx.webp",
-      "descripcion": "Es un micrófono RGB premium para juegos con LIGHTSYNC. Este micrófono USB rechaza el ruido y los clics de las teclas, mejora el sonido y garantiza un audio de alta calidad constante mientras transmite.",
-      "precio": 130000
+      "envio": true
     },
     {
       "id": 12,
       "nombre": "STREAM CAM",
+      "precio": 76500,
+      "stock": "3",
+      "detalles": "StreamCam hace streaming y graba con resolución Full HD 1080p a 60 fps, ofreciendo excepcional video con movimiento fluido para tu mundo online",
       "foto": "img/Logitech-Stream-Cam.webp",
-      "descripcion": "StreamCam hace streaming y graba con resolución Full HD 1080p a 60 fps, ofreciendo excepcional video con movimiento fluido para tu mundo online",
-      "precio": 76500
+      "envio": true
     },
     {
       "id": 13,
       "nombre": "celular",
       "precio": "480",
-      "stock": "2",
-      "detalles": "negro",
-      "foto": "img/manzanita.jpg",
-      "envio": true
-    },
-    {
-      "id": 14,
-      "nombre": "celular",
-      "precio": "567",
       "stock": "3",
-      "detalles": "roja",
-      "foto": "img/yety-gx.webp",
-      "envio": true
-    },
-    {
-      "id": 15,
-      "nombre": "celular",
-      "precio": "480",
-      "stock": "3",
-      "detalles": "roja",
+      "detalles": "negro con funda",
       "foto": "img/yety-gx.webp",
       "envio": true
     }
-  ]
+  ],
+  "carrito": []
 }

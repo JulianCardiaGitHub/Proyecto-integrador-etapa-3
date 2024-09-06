@@ -7,6 +7,7 @@ const ProductosProvider = ({ children }) => {
   const url = import.meta.env.VITE_BACKEND_PRODUCTOS;
   const [productos, setProductos] = useState(null);
   const [productoAEditar, setProductoAEditar] = useState(null)
+  
 
   useEffect(() => {
     getAllProductos();
@@ -50,28 +51,41 @@ const crearProductoContext = async (nuevoProducto) => {
 }
 
 const actualizarProductoContext = async (productoEditado) => {
-    
-    try {
+  
+  try {
 
-        const options = {
-            method: 'PUT',
-            headers: { 'content-type' : 'application/json' },
-            body: JSON.stringify(productoEditado)
-        }
+      const options = {
+          method: 'PUT',
+          headers: { 'content-type' : 'application/json' },
+          body: JSON.stringify(productoEditado)
+      }
 
-        const urlEdicion = url + productoEditado.id 
+      const urlEdicion = url + productoEditado.id 
 
-        const editedProduct = await helperPeticionesHttp(urlEdicion, options)
+      const editedProduct = await helperPeticionesHttp(urlEdicion, options)
 
-        const nuevoEstadoProductos = productos.map( 
-            producto => producto.id === editedProduct.id ? editedProduct : producto
-        )
-        setProductos(nuevoEstadoProductos)
-        
-    } catch (error) {
-        console.error('[actualizarProductoContext]', error)
+      const nuevoEstadoProductos = productos.map( 
+          producto => producto.id === editedProduct.id ? editedProduct : producto
+      )
+      setProductos(nuevoEstadoProductos)
+      
+  } catch (error) {
+      console.error('[actualizarProductoContext]', error)
+  }
+
+}
+
+const eliminarProducto = (id) => {
+  const nuevoEstadoProductos = productos.filter(function(prod) {
+   
+    if ( prod.id !== id ) {
+      return prod
+    } else {
+      console.log(prod, '----> Producto que se va a eliminar', id)
     }
-
+  })
+  console.log(nuevoEstadoProductos)
+  setProductos(nuevoEstadoProductos) 
 }
 
   const data = {
