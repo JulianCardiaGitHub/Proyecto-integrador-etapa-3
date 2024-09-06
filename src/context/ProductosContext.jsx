@@ -7,7 +7,7 @@ const ProductosProvider = ({ children }) => {
   const url = import.meta.env.VITE_BACKEND_PRODUCTOS;
   const [productos, setProductos] = useState(null);
   const [productoAEditar, setProductoAEditar] = useState(null)
-  
+ 
 
   useEffect(() => {
     getAllProductos();
@@ -94,6 +94,7 @@ const eliminarProducto = (id) => {
     actualizarProductoContext,
     productoAEditar,
     setProductoAEditar
+    
   }
 
   return (

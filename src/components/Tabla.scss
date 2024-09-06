@@ -48,9 +48,10 @@
       }
     }
   
-    @media (max-width: 576px) {
+ @media (max-width: 576px) {
       thead {
-        display: none; // Ocultar la cabecera en pantallas pequeñas
+        display: none;
+       
       }
   
       tbody {
@@ -74,7 +75,7 @@
           }
         }
       }
-    }
+    } 
   
     @media (min-width: 576px) {
       tbody {
@@ -94,3 +95,4 @@
     }
   }
   
+ 

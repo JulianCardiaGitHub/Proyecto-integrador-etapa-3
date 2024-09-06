@@ -49,14 +49,46 @@ tr {
           color: red;
         }
       }
-  
-      .eliminar {
-        color: var(--color-primario-oscuro);
-      }
-  
-      .editar {
-        color: var(--color-primario-oscuro);
-      }
+      .btn-edit {
+        background-color: var(--color-primario-oscuro);
+        color:var(--color-whatsapp);
+        border: none;
+        border-radius: 50%; 
+        width: 40px; 
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-edit:hover {
+      color: var(--color-primario-oscuro);
+        background-color: var(--color-whatsapp); 
+        
+    }
+    
+    .btn-eliminar {
+        background-color:  var(--color-primario-oscuro); 
+        color:crimson;
+        border: none;
+        border-radius: 50%; 
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-eliminar:hover {
+      color: var(--color-primario-oscuro);
+        background-color: crimson;
+    }
+    
+    
     }
   
     @media (max-width: 576px) {
@@ -81,6 +113,7 @@ tr {
         }
   
         .img-row {
+         
           width: 40px;
           height: 40px;
         }
@@ -106,3 +139,4 @@ tr {
     }
   }
   
+

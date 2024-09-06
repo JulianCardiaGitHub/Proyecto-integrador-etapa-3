@@ -1,8 +1,9 @@
 import { useContext } from 'react'
 import './TablaFila.scss'
 import ProductosContext from '../context/ProductosContext'
+import Swal from 'sweetalert2'
 
-const TablaFila = ( { producto , eliminarProducto }) => {
+const TablaFila = ( { producto }) => {
 
   const { setProductoAEditar } = useContext(ProductosContext)
   
@@ -12,10 +13,32 @@ const TablaFila = ( { producto , eliminarProducto }) => {
     setProductoAEditar(producto)
   }
 
+const { eliminarProducto } = useContext(ProductosContext)
 
-  const handleEliminar = () => {
+  const handleEliminar = (id) => {
    
+    
+Swal.fire({
+  title: "ESTAS SEGURO?...",
+  text: `Estas borrando el producto: ${producto.nombre}`,
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "SI, quiero borrarlo!!",
+  cancelButtonText: "NO!... Volver atras",
+}).then((result) => {
+  if (result.isConfirmed) {
     eliminarProducto(producto.id)
+    Swal.fire({
+      title: "BORRADO",
+      text: "El producto se borro con exito",
+      icon: "success"
+    });
+  }
+});
+
+    
   }
   
   return (
@@ -30,7 +53,7 @@ const TablaFila = ( { producto , eliminarProducto }) => {
       <td>{producto.envio ? 'SI' : 'NO'}</td>
       <td>
       <button className='btn-edit' onClick={() => handleEditar(producto)}><i className="fa-solid fa-pen-to-square"/></button>
-      <button className= 'btn-eliminar' onClick={() => handleEliminar(producto)}><i className="fa-solid fa-trash-can"/></button>
+      <button className= 'btn-eliminar' onClick={handleEliminar}><i className="fa-solid fa-trash-can"/></button>
       </td>
     </tr>
   )
