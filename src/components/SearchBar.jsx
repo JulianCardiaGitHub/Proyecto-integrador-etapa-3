@@ -18,7 +18,8 @@ const SearchBar = () => {
     </form>
     <div className="search-bar__carrito-container">
       <img className="carrito" src="img/carrito.png" alt="Carrito" />
-    </div>
+      </div>
+
     <div className="menu-toogle">
       <label htmlFor="menu" className="menu-toogle__label">
         <span className="menu-toogle__top-bread"></span>
@@ -33,3 +34,6 @@ const SearchBar = () => {
 }
 
 export default SearchBar
+
+
+{/* <img className="carrito" src="img/carrito.png" alt="Carrito" /> */}

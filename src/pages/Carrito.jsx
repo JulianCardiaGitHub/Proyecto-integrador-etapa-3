@@ -6,7 +6,7 @@ const Carrito = () => {
   useTitulo('Carrito')
 
   return (
-    <div>Carrito</div>
+    <></>
   )
 }
 
