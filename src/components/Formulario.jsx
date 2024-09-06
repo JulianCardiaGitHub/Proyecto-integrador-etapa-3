@@ -12,7 +12,7 @@ const Formulario = () => {
     nombre: '',
     precio: '',
     stock: '',
-    descripcion: '',
+    detalles: '',
     foto: '',
     envio: false,
   }
@@ -20,6 +20,7 @@ const Formulario = () => {
   const [form, setForm] = useState(formInit)
 
   const { crearProductoContext, actualizarProductoContext, productoAEditar, setProductoAEditar } = useContext(ProductosContext)
+  
 
   useEffect(() => {
     productoAEditar ? setForm(productoAEditar) : setForm(formInit)
@@ -48,10 +49,7 @@ const Formulario = () => {
   }
 
   const handleChange = e => {
-    //console.log(e.target.name)
-    //console.log(e.target.value)
-    //console.log(e.target.checked)
-    //console.log(e.target.type)
+ 
     const { type, name, checked, value } = e.target
 
     setForm({

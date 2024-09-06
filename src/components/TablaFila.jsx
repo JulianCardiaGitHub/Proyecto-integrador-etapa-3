@@ -6,7 +6,7 @@ const TablaFila = ( { producto }) => {
 
   const { setProductoAEditar } = useContext(ProductosContext)
   
-  //console.log(producto)
+
   const handleEditar = (producto) => {
     console.log('Producto a editar...', producto.id)
     setProductoAEditar(producto)
@@ -23,7 +23,7 @@ const TablaFila = ( { producto }) => {
       </td>
       <td>{producto.envio ? 'SI' : 'NO'}</td>
       <td>
-        <div className="editar"><i className="fa-solid fa-pen-to-square" onClick={() => handleEditar(producto)}></i></div>
+        <div className="editar"><i className="fa-solid fa-pen-to-square" onClick={(producto) => handleEditar(producto)}></i></div>
         <div className="eliminar"><i className="fa-solid fa-trash-can"></i></div>
       </td>
     </tr>

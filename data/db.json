@@ -83,6 +83,33 @@
       "foto": "img/Logitech-Stream-Cam.webp",
       "descripcion": "StreamCam hace streaming y graba con resolución Full HD 1080p a 60 fps, ofreciendo excepcional video con movimiento fluido para tu mundo online",
       "precio": 76500
+    },
+    {
+      "id": 13,
+      "nombre": "celular",
+      "precio": "480",
+      "stock": "2",
+      "detalles": "negro",
+      "foto": "img/manzanita.jpg",
+      "envio": true
+    },
+    {
+      "id": 14,
+      "nombre": "celular",
+      "precio": "567",
+      "stock": "3",
+      "detalles": "roja",
+      "foto": "img/yety-gx.webp",
+      "envio": true
+    },
+    {
+      "id": 15,
+      "nombre": "celular",
+      "precio": "480",
+      "stock": "3",
+      "detalles": "roja",
+      "foto": "img/yety-gx.webp",
+      "envio": true
     }
   ]
 }
