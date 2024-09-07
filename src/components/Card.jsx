@@ -3,7 +3,12 @@ import './Card.scss'
 
 const Card = ( { producto }) => {
 
- 
+ const handleAgregar = (producto) => {
+
+console.log(producto)
+//agregarProductoAlCariitoContext(producto)
+
+ }
 
   return (
     <div className="card">

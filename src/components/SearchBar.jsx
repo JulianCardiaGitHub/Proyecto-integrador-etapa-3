@@ -38,4 +38,3 @@ const SearchBar = () => {
 export default SearchBar
 
 
-{/* <img className="carrito" src="img/carrito.png" alt="Carrito" /> */}
