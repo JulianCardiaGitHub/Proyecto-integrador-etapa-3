@@ -31,6 +31,7 @@ if (!elProductoEstaenCarrito(producto)) {
    const productoDeCarrito = obtenerProductodeCarrito(producto)
    console.log(productoDeCarrito)
    productoDeCarrito.cantidad++
+   window.localStorage.setItem(`carrito`, JSON.stringify(carrito))
 }
 
 
