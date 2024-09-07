@@ -1,6 +1,10 @@
+
 import './Card.scss'
 
 const Card = ( { producto }) => {
+
+ 
+
   return (
     <div className="card">
     <article className="card__article">

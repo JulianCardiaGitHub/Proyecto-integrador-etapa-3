@@ -52,7 +52,7 @@
       "stock": "2",
       "detalles": "Éste es MX Master 3S. Siente cada momento de tu flujo de trabajo con más precisión, sensación táctil y desempeño, gracias a los clicks discretos y un sensor de seguimiento sobre cristal13Grosor.",
       "foto": "img/mx-master-3s.webp",
-      "envio": true
+      "envio": false
     },
     {
       "id": 7,
@@ -114,6 +114,15 @@
       "precio": "480",
       "stock": "3",
       "detalles": "negro con funda",
+      "foto": "img/yety-gx.webp",
+      "envio": true
+    },
+    {
+      "id": 14,
+      "nombre": "auricular",
+      "precio": "6789",
+      "stock": "6",
+      "detalles": "alto auricular",
       "foto": "img/yety-gx.webp",
       "envio": true
     }

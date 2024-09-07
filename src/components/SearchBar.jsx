@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SearchBar = () => {
   return (
@@ -17,7 +18,8 @@ const SearchBar = () => {
       <input type="submit" className="search-bar__form-submit" value="Buscar" />
     </form>
     <div className="search-bar__carrito-container">
-      <img className="carrito" src="img/carrito.png" alt="Carrito" />
+      <Link to="carrito"><img className="carrito" src="img/carrito.png" alt="Carrito" /></Link>
+      
       </div>
 
     <div className="menu-toogle">

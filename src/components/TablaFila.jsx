@@ -21,9 +21,9 @@ const TablaFila = ( { producto }) => {
 Swal.fire({
   title: "ESTAS SEGURO?...",
   text: `Estas borrando el producto: ${producto.nombre}`,
-  icon: "warning",
+  icon: "warning" ,
   showCancelButton: true,
-  confirmButtonColor: "#3085d6",
+  confirmButtonColor: "#25d366",
   cancelButtonColor: "#d33",
   confirmButtonText: "SI, quiero borrarlo!!",
   cancelButtonText: "NO!... Volver atras",
@@ -34,6 +34,7 @@ Swal.fire({
       title: "BORRADO",
       text: "El producto se borro con exito",
       icon: "success"
+      
     });
   }
 });
