@@ -126,6 +126,7 @@
     }
   
     &__carrito-container {
+      box-sizing: content-box;
       flex: 0 0 3rem; /* shorthand (grow shrink basis */
       background-color: var(--color-primario-oscuro);
       height: 50%;
