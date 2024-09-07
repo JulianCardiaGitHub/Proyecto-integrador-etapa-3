@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 const TablaFila = ( { producto }) => {
 
-  const { setProductoAEditar } = useContext(ProductosContext)
+  const { setProductoAEditar , eliminarProductoContext } = useContext(ProductosContext)
   
 
   const handleEditar = (producto) => {
@@ -13,9 +13,9 @@ const TablaFila = ( { producto }) => {
     setProductoAEditar(producto)
   }
 
-const { eliminarProducto } = useContext(ProductosContext)
 
-  const handleEliminar = (id) => {
+
+  const handleEliminar = () => {
    
     
 Swal.fire({
@@ -29,7 +29,7 @@ Swal.fire({
   cancelButtonText: "NO!... Volver atras",
 }).then((result) => {
   if (result.isConfirmed) {
-    eliminarProducto(producto.id)
+    eliminarProductoContext(producto.id)
     Swal.fire({
       title: "BORRADO",
       text: "El producto se borro con exito",

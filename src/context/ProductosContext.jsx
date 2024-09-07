@@ -75,25 +75,38 @@ const actualizarProductoContext = async (productoEditado) => {
 
 }
 
-const eliminarProducto = (id) => {
-  const nuevoEstadoProductos = productos.filter(function(prod) {
-   
-    if ( prod.id !== id ) {
-      return prod
-    } else {
-      console.log(prod, '----> Producto que se va a eliminar', id)
-    }
-  })
-  console.log(nuevoEstadoProductos)
-  setProductos(nuevoEstadoProductos) 
+const eliminarProductoContext =  async (id) => {
+  try {
+         const urlEliminacion = url + id
+         const options = {
+          method: 'DELETE'
+         }    
+         const dataEliminada = await helperPeticionesHttp(urlEliminacion)
+         const productoEliminado = {
+          id: id,
+          producto: dataEliminada
+         }
+
+         const nuevoEstadoProductos = productos.filter(producto => (producto.id !== productoEliminado.id))
+
+         setProductos(nuevoEstadoProductos
+
+         )
+  } catch (error) {
+    console.error('[eliminarProductoContext]', error)
+  }
 }
+  
+   
+   
 
   const data = {
     productos,
     crearProductoContext,
     actualizarProductoContext,
     productoAEditar,
-    setProductoAEditar
+    setProductoAEditar,
+    eliminarProductoContext
     
   }
 
