@@ -107,16 +107,8 @@
       "detalles": "StreamCam hace streaming y graba con resolución Full HD 1080p a 60 fps, ofreciendo excepcional video con movimiento fluido para tu mundo online",
       "foto": "img/Logitech-Stream-Cam.webp",
       "envio": true
-    },
-    {
-      "id": 13,
-      "nombre": "Mouse",
-      "precio": "200",
-      "stock": "5",
-      "detalles": "el mas barato",
-      "foto": "",
-      "envio": true
     }
+   
   ],
   "carrito": []
 }
