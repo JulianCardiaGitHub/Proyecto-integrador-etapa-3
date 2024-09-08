@@ -52,7 +52,7 @@ const eliminarValor = (id) => {
 
 const limpiarValores = () => {
     window.localStorage.clear()
-    window.localStorage.setitem(clave, JSON.stringify(valorInicial))
+    window.localStorage.setItem(clave, JSON.stringify(valorInicial))
     setvalorAlmacenado(valorInicial)
 }
 

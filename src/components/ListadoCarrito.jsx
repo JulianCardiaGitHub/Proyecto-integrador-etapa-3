@@ -36,7 +36,7 @@ const ListadoCarrito = () => {
                 {
                     carrito.length <= 0 ? (
                         <tr>
-                            <td colSpan={5} style={{textAlign: 'center'}}>No hay productos</td>
+                            <td colSpan={5}>No hay productos <i className="fa-regular fa-circle-xmark"></i></td>
                         </tr>
                     ) : (
                         carrito.map((producto, idx) => (
@@ -48,10 +48,12 @@ const ListadoCarrito = () => {
         </table>
         <hr />
         { !carrito.length <= 0 && (
+            <>
                 <div className="btn-listado">
                     <button className="btn-delete" onClick={handleLimpiarCarrito}><i className="fa-solid fa-delete-left"></i></button>
                     <button className="btn-comprar"onClick={handleComprar}><i className="fa-solid fa-money-bill-1-wave"></i></button>
                 </div>
+                </>
             )
         }
     </>

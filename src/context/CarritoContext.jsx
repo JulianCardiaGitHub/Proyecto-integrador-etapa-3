@@ -40,7 +40,7 @@ if (!elProductoEstaenCarrito(producto)) {
 
 const eliminarProductoDelCarritoContext = (id) => {
  console.log(id)
- eliminarDelCarrito()
+ eliminarDelCarrito(id)
 
 }
 
