@@ -1,5 +1,5 @@
 .btn-borrar{
-    background-color:  var(--color-primario-oscuro); 
+    background-color:  var(--color-terciario-celestito); 
         color:whitesmoke;
         border: none;
         border-radius: 50%; 
@@ -12,7 +12,7 @@
         transition: background-color 0.3s ease;
 }
 .btn-borrar:hover {
-    color: var(--color-primario-oscuro);
-      background-color: crimson;
+    color: crimson;
+      background-color: var(--color-bordes-iconos-plas);
   }
 

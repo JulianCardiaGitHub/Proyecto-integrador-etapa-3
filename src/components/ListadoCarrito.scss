@@ -52,9 +52,9 @@
     margin-top: 20px;
 
     .btn-delete, .btn-comprar {
-        background-color: #007bff;
+        background-color: var(--color-primario-oscuro);
         border: none;
-        color: white;
+        color: var(--color-whatsapp);
         padding: 15px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -67,7 +67,8 @@
         justify-content: center;
 
         &:hover {
-            background-color: #0056b3;
+            color:var(--color-primario-oscuro);
+            background-color: var(--color-whatsapp);
         }
 
         i {
@@ -76,7 +77,8 @@
     }
 
     .btn-delete {
-        background-color: #dc3545;
+        color: crimson;
+        background-color: var(--color-primario-oscuro);
 
         &:hover {
             background-color: #c82333;
@@ -89,6 +91,11 @@
         font-size: 0.875rem;
 
         thead {
+            
+                display: none;
+               
+              
+
             th {
                 padding: 8px 10px;
             }
