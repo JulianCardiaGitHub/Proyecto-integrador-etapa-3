@@ -11,7 +11,7 @@ const CarritoProvider = ( { children } ) => {
     const [ agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito ] = useLocalStorage('carrito', [])
 
 function elProductoEstaenCarrito(producto ) {
-    console.log(`Analizo si el producto esta en el  carrito`)
+    //console.log(`Analizo si el producto esta en el  carrito`)
     const nuevoArray = carrito.filter(prod => prod.id === producto.id)
     return nuevoArray.length
 }
@@ -22,7 +22,7 @@ return carrito.find(prod => prod.id === producto.id)
 
 const agregarProductoAlCarritoContext = (producto) => {
     
-    console.log(`Ya estoy agregando el producto:`, producto)
+    //console.log(`Ya estoy agregando el producto:`, producto)
    
 if (!elProductoEstaenCarrito(producto)) {
       producto.cantidad = 1

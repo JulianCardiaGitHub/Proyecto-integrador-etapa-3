@@ -9,7 +9,7 @@ const Card = ( { producto }) => {
 
  const handleAgregar = (producto) => {
 
-console.log(`Agregando producto al carrito.!`)
+//console.log(`Agregando producto al carrito.!`)
 agregarProductoAlCarritoContext(producto)
 }
 

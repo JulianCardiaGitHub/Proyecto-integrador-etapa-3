@@ -14,7 +14,7 @@ const ListadoCarrito = () => {
   }
 
   const handleLimpiarCarrito = () => {
-    console.log('Vaciando el carrito completo..')
+   // console.log('Vaciando el carrito completo..')
     limpiarCarritoContext()
   }
 

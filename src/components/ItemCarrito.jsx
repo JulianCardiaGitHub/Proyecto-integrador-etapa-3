@@ -7,7 +7,7 @@ const ItemCarrito = ({producto}) => {
     const { eliminarProductoDelCarritoContext } = useContext(CarritoContext) 
 
     const handleEliminar = (id) => {
-        console.log('Eliminando el producto',id)
+       // console.log('Eliminando el producto',id)
         eliminarProductoDelCarritoContext(id)
     }
 
