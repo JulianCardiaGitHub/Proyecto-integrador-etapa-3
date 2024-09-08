@@ -1,0 +1,149 @@
+.tabla-carrito {
+    width:100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    min-width: 400px;
+
+    thead {
+        background-color: var(--color-primario-oscuro);
+        color: #fff;
+
+        th {
+            padding: 12px 15px;
+            text-align: center;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #ddd;
+
+            &:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            &:hover {
+                background-color: #e0f7fa;
+            }
+
+            td {
+                padding: 12px 15px;
+                text-align: center;
+
+                &:first-child {
+                    width: 60px;
+                }
+            }
+        }
+
+        tr.no-productos {
+            td {
+                text-align: center;
+                color: #999;
+            }
+        }
+    }
+}
+
+.btn-listado {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .btn-delete, .btn-comprar {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+
+        i {
+            margin: 0;
+        }
+    }
+
+    .btn-delete {
+        background-color: #dc3545;
+
+        &:hover {
+            background-color: #c82333;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .tabla-carrito {
+        font-size: 0.875rem;
+
+        thead {
+            th {
+                padding: 8px 10px;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 8px 10px;
+                }
+            }
+        }
+    }
+
+    .btn-listado {
+        flex-direction: column;
+
+        .btn-delete, .btn-comprar {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            font-size: 1.25rem;
+            margin: 5px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .tabla-carrito {
+        font-size: 1rem;
+
+        thead {
+            th {
+                padding: 12px 15px;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 12px 15px;
+                }
+            }
+        }
+    }
+
+    .btn-listado {
+        flex-direction: row;
+
+        .btn-delete, .btn-comprar {
+            width: 60px;
+            height: 60px;
+            padding: 15px;
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+    }
+}
