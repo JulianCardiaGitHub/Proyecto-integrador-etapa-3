@@ -1,11 +1,13 @@
 import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-
+import { helperPeticionesHttp } from "../helpers/helper-peticiones-http";
+import Swal from 'sweetalert2'
 
 
 const CarritoContext = createContext()
 
 const CarritoProvider = ( { children } ) => {
+  const url = import.meta.env.VITE_BACKEND_CARRITOS
 
 
     const [ agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito ] = useLocalStorage('carrito', [])
@@ -51,6 +53,36 @@ const limpiarCarritoContext = () => {
 
 const guardarCarritoContext = async () => {
 console.log(carrito)
+console.log(JSON.stringify(carrito))
+
+try {
+  const options = {
+    method: 'POST',
+    headers: { 'Content-Type' : 'application/json'},
+    body: JSON.stringify(carrito)
+  }
+
+
+    const losProductosEnElCarrito =  await helperPeticionesHttp(url, options)
+
+    console.log(losProductosEnElCarrito)
+
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Compra exitosa",
+        showConfirmButton: false,
+        timer: 2500
+      });
+
+    
+} catch (error) {
+    console.error('[guardarCarritoContext]', error)
+}
+
+
+
+
 }
 
     const data = {

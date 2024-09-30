@@ -10,7 +10,7 @@ const ListadoCarrito = () => {
 
   const handleComprar = () => {
     console.log('Comprando...lo del carrito!')
-    guardarCarritoContext()
+    guardarCarritoContext(carrito)
   }
 
   const handleLimpiarCarrito = () => {

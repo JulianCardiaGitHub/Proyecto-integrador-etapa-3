@@ -114,7 +114,7 @@ const Nosotros = () => {
           </div>
         </div>
       </section>
-      <div className="whatsapp"><i className="fa-brands fa-whatsapp fa-2xl"></i></div>
+      
 
     </main>
   </div>
