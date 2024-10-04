@@ -71,7 +71,7 @@ const Formulario = () => {
     <>
       <h3 className="agre-productos">Agregar : Editar</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form className="agregarEditar" onSubmit={handleSubmit}>
 
         <div>
           <label htmlFor="lbl-nombre">Nombre</label>
