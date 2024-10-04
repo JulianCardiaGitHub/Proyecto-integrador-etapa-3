@@ -112,7 +112,16 @@
     &:focus &__image-container {
         clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%); /* Estado final */
     }
-   
+
+  .card__heading{
+    margin-left: 15px;
+  }
+  .h3Precio{
+    margin-left: 10px;
+  }
+  .p-products{
+    margin-left: 10px;
+  }
 }
 
 

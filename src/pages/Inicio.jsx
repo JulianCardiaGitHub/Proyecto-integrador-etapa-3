@@ -32,7 +32,12 @@ const inicio = () => {
           
         </div>
       </section>
-      <div className="whatsapp"><i className="fa-brands fa-whatsapp fa-2xl"></i></div>
+      <div className="whatsapp">
+  <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-whatsapp fa-2xl"></i>
+  </a>
+</div>
+
 
     </main>
   )

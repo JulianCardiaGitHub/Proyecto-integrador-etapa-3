@@ -128,8 +128,8 @@ const Formulario = () => {
             onChange={handleChange} />
         </div>
 
-        <button type="submit">Guardar</button>
-        <button type="reset" onClick={handleReset}>Limpiar</button>
+        <button className="btnGuardar" type="submit">Guardar</button>
+        <button className="btnLimpiar" type="reset" onClick={handleReset}>Limpiar</button>
 
       </form>
     

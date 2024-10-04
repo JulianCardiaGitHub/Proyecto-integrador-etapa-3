@@ -25,7 +25,7 @@ agregarProductoAlCarritoContext(producto)
       </div>
       <div className="card__content">
         <h2 className="card__heading">{producto.nombre}</h2>
-        <h3>${producto.precio}</h3>
+        <h3 className="h3Precio">${producto.precio}</h3>
         <div className="card__description">
           <p className="p-products">
           {producto.detalles}

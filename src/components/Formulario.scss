@@ -48,7 +48,7 @@ form {
       }
     }
   
-    button {
+    .btnGuardar {
       width: 100%;
       padding: 10px;
       font-size: 1rem;
@@ -61,14 +61,34 @@ form {
       transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: var(--color-terciario-celestito);
+        background-color: var(--color-whatsapp);
+      }
+  
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+   
+    }
+    .btnLimpiar {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: var(--color-primario-oscuro);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: crimson;
       }
   
       &:not(:last-child) {
         margin-bottom: 10px;
       }
     }
-  
     @media (max-width: 576px) {
       padding: 15px;
       
