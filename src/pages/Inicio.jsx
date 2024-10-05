@@ -1,14 +1,13 @@
-import { useContext } from 'react'
-import Card from '../components/Card'
-import useTitulo from '../hooks/useTitulo'
-import './Inicio.scss'
-import ProductosContext from '../context/ProductosContext'
+import { useContext } from "react";
+import Card from "../components/Card";
+import useTitulo from "../hooks/useTitulo";
+import "./Inicio.scss";
+import ProductosContext from "../context/ProductosContext";
 
 const inicio = () => {
+  const { productos } = useContext(ProductosContext);
 
-  const { productos } = useContext(ProductosContext)
-
-  useTitulo('Inicio')
+  useTitulo("Inicio");
 
   return (
     <main>
@@ -19,28 +18,23 @@ const inicio = () => {
         </header>
 
         <div className="cards-container" id="contenedor-cards">
-        
-        {
-          productos && productos.map((producto) => (
-            <Card key={producto.id} producto={producto} />
-          ))
-        }
-
-
-
-      
-          
+          {productos &&
+            productos.map((producto) => (
+              <Card key={producto.id} producto={producto} />
+            ))}
         </div>
       </section>
       <div className="whatsapp">
-  <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-whatsapp fa-2xl"></i>
-  </a>
-</div>
-
-
+        <a
+          href="https://web.whatsapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+      </div>
     </main>
-  )
-}
+  );
+};
 
-export default inicio
+export default inicio;

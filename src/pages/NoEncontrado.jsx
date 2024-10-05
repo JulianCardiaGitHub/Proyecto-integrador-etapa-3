@@ -1,13 +1,9 @@
-import useTitulo from "../hooks/useTitulo"
-
+import useTitulo from "../hooks/useTitulo";
 
 const NoEncontrado = () => {
+  useTitulo("NoEncontrado");
 
-  useTitulo('NoEncontrado')
+  return <div>NoEncontrado</div>;
+};
 
-  return (
-    <div>NoEncontrado</div>
-  )
-}
-
-export default NoEncontrado
+export default NoEncontrado;

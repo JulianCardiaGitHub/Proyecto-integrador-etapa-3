@@ -1,21 +1,19 @@
-import Formulario from "../components/Formulario"
-import Tabla from "../components/Tabla"
-import useTitulo from "../hooks/useTitulo"
-
+import Formulario from "../components/Formulario";
+import Tabla from "../components/Tabla";
+import useTitulo from "../hooks/useTitulo";
 
 const Alta = () => {
+  useTitulo("Alta");
 
-useTitulo('Alta')
+  return (
+    <>
+      <h1>Formulario de alta de productos</h1>
+      <h2 className="ap">Agregar producto</h2>
+      <Formulario />
+      <hr />
+      <Tabla />
+    </>
+  );
+};
 
-return (
-  <>
-    <h1>Formulario de alta de productos</h1>
-    <h2 className="ap">Agregar producto</h2>
-    <Formulario />
-    <hr />
-    <Tabla />
-  </>
-)
-}
-
-export default Alta
+export default Alta;

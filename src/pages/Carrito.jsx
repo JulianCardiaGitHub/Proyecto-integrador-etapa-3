@@ -1,20 +1,16 @@
-import useTitulo from "../hooks/useTitulo"
-import ListadoCarrito from "../components/ListadoCarrito"
-
+import useTitulo from "../hooks/useTitulo";
+import ListadoCarrito from "../components/ListadoCarrito";
 
 const Carrito = () => {
-
-  useTitulo('Carrito')
- 
-  
+  useTitulo("Carrito");
 
   return (
     <>
-   <h1>Productos en el carrito</h1>
-   
-    <ListadoCarrito />
-    </>
-  )
-}
+      <h1>Productos en el carrito</h1>
 
-export default Carrito
+      <ListadoCarrito />
+    </>
+  );
+};
+
+export default Carrito;

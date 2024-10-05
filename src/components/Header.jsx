@@ -1,20 +1,17 @@
-import './Header.scss'
-import Navbar from './Navbar'
-import SearchBar from './SearchBar'
+import "./Header.scss";
+import Navbar from "./Navbar";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   return (
     <header className="main-header">
-    <input type="checkbox" id="menu" />
+      <input type="checkbox" id="menu" />
 
-    
-    <Navbar />
- 
-    <SearchBar />
-    
-    
-  </header>
-  )
-}
+      <Navbar />
 
-export default Header
+      <SearchBar />
+    </header>
+  );
+};
+
+export default Header;
