@@ -96,7 +96,7 @@
       "precio": 130000,
       "stock": "7",
       "detalles": "Es un micrófono RGB premium para juegos con LIGHTSYNC. Este micrófono USB rechaza el ruido y los clics de las teclas, mejora el sonido y garantiza un audio de alta calidad constante mientras transmite.",
-      "foto": "public/img/yeti-gx.webp",
+      "foto": "img/yeti-gx.webp",
       "envio": true
     },
     {

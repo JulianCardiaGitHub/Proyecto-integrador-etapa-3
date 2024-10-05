@@ -11,7 +11,7 @@ const Nosotros = () => {
         <div className="img-container">
           <img
             className="vd"
-            src="/public/img/vidriera-vision-digital.webp"
+            src="img/vidriera-vision-digital.webp"
             alt="vidriera-vision-digital"
           />
         </div>
