@@ -12,7 +12,8 @@ const TablaFila = ({ producto }) => {
     setProductoAEditar(producto);
   };
 
-  const handleEliminar = () => {
+  const handleEliminar = (_id) => {
+  
     Swal.fire({
       title: "ESTAS SEGURO?...",
       text: `Estas borrando el producto: ${producto.nombre}`,
@@ -48,7 +49,7 @@ const TablaFila = ({ producto }) => {
         <button className="btn-edit" onClick={() => handleEditar(producto)}>
           <i className="fa-solid fa-pen-to-square" />
         </button>
-        <button className="btn-eliminar" onClick={handleEliminar}>
+        <button className="btn-eliminar" onClick={() => handleEliminar(producto)}>
           <i className="fa-solid fa-trash-can" />
         </button>
       </td>

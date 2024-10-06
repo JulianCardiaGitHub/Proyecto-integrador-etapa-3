@@ -61,15 +61,16 @@ const ProductosProvider = ({ children }) => {
     }
   };
 
-  const eliminarProductoContext = async (id) => {
+  const eliminarProductoContext = async (_id) => {
     try {
-      const urlEliminacion = url + id;
+      const urlEliminacion = url + _id;
       const options = {
         method: "DELETE",
+       
       };
-      const dataEliminada = await helperPeticionesHttp(urlEliminacion);
+      const dataEliminada = await helperPeticionesHttp(urlEliminacion, options);
       const productoEliminado = {
-        id: id,
+        id: _id,
         producto: dataEliminada,
       };
 
